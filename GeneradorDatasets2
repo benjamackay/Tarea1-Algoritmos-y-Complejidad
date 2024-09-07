@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <cstdlib> // Para std::rand y std::srand
+#include <ctime>   // Para std::time
+#include <algorithm> // Para std::shuffle
+
+// Función para generar un arreglo parcialmente ordenado
+std::vector<int> generatePartiallyOrderedArray(int size, double orderFraction) {
+    std::vector<int> arr(size);
+
+    // Rellena el arreglo con valores ordenados
+    for (int i = 0; i < size; ++i) {
+        arr[i] = size - i;
+    }
+
+    // Desordena una parte del arreglo
+    int numToShuffle = static_cast<int>(size * (1 - orderFraction));
+    if (numToShuffle > 0) {
+        std::random_shuffle(arr.end() - numToShuffle, arr.end());
+    }
+
+    return arr;
+}
+
+int main() {
+    std::srand(static_cast<unsigned>(std::time(0))); // Inicializa la semilla para números aleatorios
+
+    std::vector<std::vector<int>> dataset;
+
+    // Número de arreglos en el dataset
+    const size_t numArrays = 1000;
+    const size_t maxSize = 1000000;
+    const double orderFraction = 0.75; // Porcentaje de elementos ordenados
+
+    // Genera arreglos de tamaños variados
+    for (int i = 0; i < numArrays; ++i) {
+        int size = std::rand() % maxSize + 1; // Tamaño aleatorio entre 1 y 1,000,000
+        dataset.push_back(generatePartiallyOrderedArray(size, orderFraction));
+    }
+
+    // Abre el archivo para escribir el dataset
+    std::ofstream file("dataset8.csv");
+    if (!file) {
+        std::cerr << "No se pudo abrir el archivo para escribir.\n";
+        return 1;
+    }
+
+    // Escribe el dataset en el archivo
+    for (const auto& arr : dataset) {
+        file << arr.size() << ","; // Escribe el tamaño del arreglo seguido de una coma
+        for (size_t i = 0; i < arr.size(); ++i) {
+            file << arr[i];
+            if (i != arr.size() - 1) {
+                file << " "; // Espacio entre los elementos
+            }
+        }
+        file << '\n'; // Nueva línea al final de cada arreglo
+    }
+
+    file.close();
+    std::cout << "Dataset guardado en 'dataset_partially_ordered.csv'.\n";
+
+    return 0;
+}
