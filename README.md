@@ -6,7 +6,7 @@ Este es el repositorio de los código utilizados en el informe para la entrega d
 
 ## Wiki
 
-Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/benjamackay/Tarea1-Algoritmos-y-Complejidad/wiki)
+Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/benjamackay/Tarea1-Algoritmos-y-Complejidad/wiki/Wiki-Repositorio-Tarea-1:-Dividir-y-Conquistar)
 
 ## Consideraciones
 
