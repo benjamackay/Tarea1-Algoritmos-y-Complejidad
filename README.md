@@ -2,12 +2,12 @@
 
 Este es el repositorio de los código utilizados en el informe para la entrega de la tarea 1.
 
-*Benjamín Mac-Kay 202204098-k
+**Benjamín Mac-Kay** - 202204098-k
 
-##Wiki
+## Wiki
 
-Puede acceder a la Wiki mediante el siguiente enlance [enlace]https://github.com/benjamackay/Tarea1-Algoritmos-y-Complejidad/wiki
+Puede acceder a la Wiki mediante el siguiente enlance [enlace] (https://github.com/benjamackay/Tarea1-Algoritmos-y-Complejidad/wiki)
 
-##Consideraciones
+## Consideraciones
 
 Los códigos se muestran en su forma canónica, sin embargo para el testeo de ciertos algoritmos estos sufrieron cambios lógicos para poder asegurar el correcto funcionamiento. Pero estos siguen siendo los mismos.
