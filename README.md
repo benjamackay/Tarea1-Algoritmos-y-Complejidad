@@ -6,7 +6,7 @@ Este es el repositorio de los código utilizados en el informe para la entrega d
 
 ##Wiki
 
-Puede acceder a la Wiki mediante el siguiente enlance [enlace]
+Puede acceder a la Wiki mediante el siguiente enlance [enlace]https://github.com/benjamackay/Tarea1-Algoritmos-y-Complejidad/wiki
 
 ##Consideraciones
 
