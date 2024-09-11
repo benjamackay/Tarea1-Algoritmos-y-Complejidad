@@ -1,6 +1,6 @@
 # Tarea1-Algoritmos-y-Complejidad
 
-Este es el repositorio de los código utilizados en el informe para la entrega de la tarea 1.
+Este es el repositorio de los código utilizados en el informe para la entrega de la tarea 1. Para encotrar el código de los algoritmos/dataset/.ipynb debe ingresar a la Wiki.
 
 **Benjamín Mac-Kay** - 202204098-k
 
